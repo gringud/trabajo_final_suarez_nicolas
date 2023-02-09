@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/imagenes/play.svg">
+
+    <!-- <link rel="stylesheet" href="./historia.css"> -->
+    <link rel="stylesheet" href="./juego.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-izq">
+            <a href="../index.html">
+                <svg  width="150" height="70">
+                    <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                    <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                    <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                    <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+                </svg>
+            </a>
+        <!-- <p>hola mundo</p> -->
+        </div>
+        <div class="nav-centro"></div>
+        <div class="nav-der">
+            <ul>
+                <a class="hiper" href="./historia.html">
+                    <li>HISTORIA</li>
+                </a>
+                <a href="./juego.html">
+                    <li>JUGUEMOS</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <section class="seccion1">
+            <!-- <img class="sec01-img" src="./assets/imagenes/codigo.jpg" alt=""> -->
+            <h1>JUGUEMOS UN POCO</h1>
+        </section>
+
+        <section class="seccion2">
+            <div class="rompecabezas">
+                <p class="rompe-titulo">Armemos el rompecabezas y veamos que imagen es...</p>
+                
+
+
+                <section class="juego">
+                    <div class="tarjetas">
+                        <div class="tarjeta1 tarjeta-todas" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p class="tarjeta-leyenda">Arrastre y suelte la imágene aquí</p>
+                        </div>
+                        <div class="tarjeta2 tarjeta-todas" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p class="tarjeta-leyenda">Arrastre y suelte la imágene aquí</p>
+                        </div>
+                        <div class="tarjeta3 tarjeta-todas" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p class="tarjeta-leyenda">Arrastre y suelte la imágene aquí</p>
+                        </div>
+                    </div>
+                    <div class="imagenes-armar">
+                        <img class="img-rompe" id="img02" src="../assets/imagenes/Rompe2.png" alt="Rompecabezas foto2" draggable="true" ondragstart="drag(event)">
+                        <img class="img-rompe" id="img01" src="../assets/imagenes/Rompe1.png" alt="Rompecabezas foto1" draggable="true" ondragstart="drag(event)">
+                        <img class="img-rompe" id="img03" src="../assets/imagenes/Rompe3.png" alt="Rompecabezas foto3" draggable="true" ondragstart="drag(event)">
+                    </div>
+                    <p class="btn-reiniciar">Reiniciar</p>
+                </section>
+
+                
+            </div>
+        </section>
+    </header>
+
+
+
+
+
+
+
+    
+    <footer class="footer">
+        <div class="footer-izq">
+            <img src="../assets/imagenes/logo.png" alt="">
+            <p>PROGRAMACION E HISTORIA</p>
+        </div>
+        <div class="footer-der">Sitio con fines educativos - Creado por Nicolas G. Suarez</div>
+    </footer>
+
+    <script src="./juego.js"></script>
+    <!-- <script src="./index.js"></script> -->
+</body>
+</html>
